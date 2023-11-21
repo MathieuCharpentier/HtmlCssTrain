@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#headbar
+{
+    background-color: cadetblue;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+}
+
+#sidebar
+{
+    background-color: cadetblue;
+    justify-content: space-around;
+    margin-top: 10vh;
+    width: 10vw;
+    height: 100vh;
+    position: fixed;
+}
+
+#sidebar input[type="image"]
+{
+    color: #FFFFFF;
+    height: 10vh;
+    width: 10vw;
+}
+
+#sidebar input[type="image"]:hover
+{
+    color: #cacaca;
+    height: 10vh;
+    width: 10vw;
+}
+
+#logo
+{
+    height: 6vh;
+    margin: 2vh;
+}
+
+#content
+{
+    height: 300vh;
+}
+
