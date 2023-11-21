@@ -17,24 +17,22 @@
 {
     background-color: cadetblue;
     justify-content: space-around;
+    align-content: center;
     margin-top: 10vh;
-    width: 10vw;
+    width: 5vw;
     height: 100vh;
     position: fixed;
 }
 
-#sidebar input[type="image"]
+.go-to-top-button
 {
-    color: #FFFFFF;
-    height: 10vh;
-    width: 10vw;
+    margin-top: 50vh;
 }
 
-#sidebar input[type="image"]:hover
+#sidebar input[type="image"]
 {
-    color: #cacaca;
     height: 10vh;
-    width: 10vw;
+    width: 5vw;
 }
 
 #logo
