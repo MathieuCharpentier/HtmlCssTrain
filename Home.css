@@ -37,10 +37,50 @@ body
     color: white;
 }
 
+.sidebar-menu
+{
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    padding-top: 1vh;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    width: 15vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.menu-text
+{
+    margin: 0.5vh;
+    padding: 0.5vh;
+}
+
 #sidebar input[type="image"]
 {
     height: 10vh;
     width: 5vw;
+}
+
+#sidebar input[type="image"]:hover 
+{
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation 
+{
+    from 
+    {
+        transform: rotate(0deg);
+    }
+
+    to 
+    {
+        transform: rotate(359deg);
+    }
 }
 
 #go-to-top-button
@@ -48,7 +88,7 @@ body
     margin-top: 45vh;
 }
 
-#all
+#all-content
 {
     display: flex;
     flex-direction: row;
@@ -73,6 +113,7 @@ body
     height: 100%;
     width: 100%; 
     object-fit: cover;
+    border-radius: 0.25vw;
 }
 
 .wide-content
@@ -82,6 +123,7 @@ body
     height: 100%;
     width: 100%; 
     object-fit: cover;
+    border-radius: 0.25vw;
 }
 
 .tall-content
@@ -91,6 +133,7 @@ body
     height: 100%;
     width: 100%; 
     object-fit: cover;
+    border-radius: 0.25vw;
 }
 
 #news
@@ -99,11 +142,12 @@ body
     height: 100vh;
 }
 
-h3
+#news-title
 {
     margin: 0.5vh;
     padding: 1vh;
     background-color: white;
+    border-radius: 0.25vw;
 }
 
 .info
@@ -113,6 +157,7 @@ h3
     height: 15.5vh;
     margin: 0.5vh;
     background-color: white;
+    border-radius: 0.25vw;
 }
 
 .info-image
