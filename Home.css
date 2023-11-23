@@ -40,7 +40,7 @@ body
 .sidebar-menu
 {
     background-color: white;
-    display: none;
+    display: flex;
     flex-direction: column;
     padding-top: 1vh;
     margin-top: 10vh;
