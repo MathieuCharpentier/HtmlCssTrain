@@ -1,10 +1,9 @@
-let civilisationMenu = document.getElementById("civilisation");
-let characterMenu = document.getElementById("character");
-let constructionMenu = document.getElementById("construction");
+const sidebarMenus = document.getElementsByClassName("sidebar-menu");
 
-civilisationMenu.style.display = "none";
-characterMenu.style.display = "none";
-constructionMenu.style.display = "none";
+for (const menu of sidebarMenus) 
+{
+    menu.style.display = "none";
+}
 
 /**
  * Make appear one sidebar Menu div and disappear the other  
@@ -12,44 +11,20 @@ constructionMenu.style.display = "none";
  */
 function showOrHideOnClick(id)
 {
-    if(id == "civilisation")
+    let menuToChange = document.getElementById(id)
+    if(menuToChange.style.display == "none")
     {
-        if(civilisationMenu.style.display == "none")
+        for (const menu of sidebarMenus) 
         {
-            civilisationMenu.style.display = "flex";
-            characterMenu.style.display = "none";
-            constructionMenu.style.display = "none";
+            menu.style.display = "none";
         }
-        else
-        {
-            civilisationMenu.style.display = "none";
-        }
+        menuToChange.style.display = "flex";
     }
-    else if(id == "character")
+    else
     {
-        if(characterMenu.style.display == "none")
+        for (const menu of sidebarMenus) 
         {
-            characterMenu.style.display = "flex";
-            civilisationMenu.style.display = "none";
-            constructionMenu.style.display = "none";
-        }
-        else
-        {
-            characterMenu.style.display = "none";
-        }
-    }
-    else if(id == "construction")
-    {
-        if(constructionMenu.style.display == "none")
-        {
-            constructionMenu.style.display = "flex";
-            civilisationMenu.style.display = "none";
-            characterMenu.style.display = "none";
-        }
-        else
-        {
-            constructionMenu.style.display = "none";
+            menu.style.display = "none";
         }
     }
 }
-
